@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Darumadrop+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: auto;
+    color: white;
+    background-color: #344684;
+}
+
+.title-container {
+    display: flex;
+    padding: 1.5rem 0;
+}
+
+.title {
+    margin: auto;
+    font-size: 3rem;
+    font-family: 'Darumadrop One', cursive;
+}
+
+.game-division-container {
+    display: flex;
+    padding: 0 8rem;
+}
+
+.computer-division {
+    width: 35%;
+    line-height: 0;
+    margin-top: 0;
+    display: flex;
+    height: 80%;
+}
+
+.computer-choice-image {
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+.score-division {
+    width: 30%;
+    display: flex;
+}
+
+.game-score {
+    margin: auto;
+    font-size: 2.75rem;
+    font-family: 'Darumadrop One', cursive;
+}
+
+.player-division {
+    width: 35%;
+    line-height: 0;
+}
+
+.player-choice-image-container {
+    display: flex;
+}
+
+.player-choice-image {
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.buttons-container button {
+    padding: 0.5rem 1.5rem;
+    font-size: 1.25rem;
+    font-family: 'Darumadrop One', cursive;
+    border-radius: 0.75rem;
+    outline: none;
+    border: none;
+}
+
+.buttons-container button:hover {
+    cursor: pointer;
+}
+
+.reset-button-container, .announcement-div {
+    display: flex;
+    padding: 1.5rem 0;
+}
+
+.announcement {
+    margin: auto;
+    font-size: 2.75rem;
+    font-family: 'Darumadrop One', cursive;
+}
+
+.reset-button {
+    margin: auto;
+    padding: 0.5rem 1.5rem;
+    font-size: 1.25rem;
+    font-family: 'Darumadrop One', cursive;
+    border-radius: 0.75rem;
+    outline: none;
+    border: none;
+}
+
+.reset-button:hover {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+    .game-division-container {
+        padding: 0 4rem;
+    }
+
+    .computer-division {
+        width: 37.5%;
+    }
+
+    .score-division {
+        width: 25%;
+    }
+
+    .game-score, .announcement {
+        font-size: 2.5rem;
+    }
+
+    .player-division {
+        width: 37.5%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .game-division-container {
+        padding: 0 2rem;
+    }
+
+    .computer-division {
+        width: 40%;
+    }
+
+    .score-division {
+        width: 20%;
+    }
+
+    .player-division {
+        width: 40%;
+    }
+
+    .buttons-container button {
+        padding: 0.5rem 1rem;
+        font-size: 1.1rem;
+    }
+
+    .reset-button {
+        padding: 0.5rem 1rem;
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .title {
+        font-size: 2.5rem;
+    }
+
+    .game-division-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .computer-division {
+        width: 80%;
+    }
+
+    .score-division {
+        width: 80%;
+    }
+
+    .player-division {
+        width: 80%;
+    }
+
+    .announcement-div {
+        padding: 1rem 0;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .computer-division {
+        width: 90%;
+    }
+
+    .score-division {
+        width: 90%;
+    }
+
+    .player-division {
+        width: 90%;
+    }
+}

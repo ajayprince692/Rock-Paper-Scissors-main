@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rock-Paper-Scissors</title>
+        <link rel="stylesheet" href="./styles/style.css">
+    </head>
+    <body>
+        <div class="title-container">
+            <h1 class="title">Rock Paper Scissors</h1>
+        </div>
+        
+        <div class="game-division-container">
+            <div class="computer-division">
+                <img src="./media/null.png" alt="" class="computer-choice-image">
+            </div>
+
+            <div class="score-division">
+                <h3 class="game-score">
+                    <span class="computer-score">0</span> : <span class="player-score">0</span>
+                    <h3 style="font-style:oblique;">Best of three</h3>
+                </h3>
+            </div>
+
+            <div class="player-division">
+                <div class="player-choice-image-container">
+                    <img src="./media/null.png" alt="" class="player-choice-image">
+                </div>
+                
+                <div class="buttons-container">
+                    <button class="rock" onclick="simulateGame('rock')" value="rock">Rock</button>
+                    <button class="paper" onclick="simulateGame('paper')" value="paper">Paper</button>
+                    <button class="scissors" onclick="simulateGame('scissors')" value="scissors">Scissors</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="announcement-div">
+            <h3 class="announcement"></h3>
+        </div>
+
+        <div class="reset-button-container">
+            <button class="reset-button" onclick="resetScore()">Reset</button>
+        </div>
+        <script src="./index.js"></script>
+    </body>
+</html>
